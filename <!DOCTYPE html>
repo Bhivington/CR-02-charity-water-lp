@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Charity: Water</title>
+  <style>r
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff7e1;
+      color: #333;
+    }
+
+    .header {
+      background-color: #000000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      color: white;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .donate-btn {
+      background-color: #ffcb00;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.1s ease;
+    }
+
+    .donate-btn:hover {
+      background-color: #e6b800;
+    }
+
+    .donate-btn:active {
+      transform: scale(0.95);
+    }
+
+    .main {
+      background-color: #74a4b4;
+      color: white;
+      padding: 5rem 2rem 8rem;
+      position: relative;
+      clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+      z-index: 1;
+    }
+
+    .main h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .main p {
+      max-width: 600px;
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .input-container {
+      background-color: #fff7e1;
+      padding: 1rem;
+      border-radius: 12px;
+      display: flex;
+      max-width: 600px;
+    }
+
+    .input-container input {
+      flex: 1;
+      padding: 0.75rem;
+      border: none;
+      font-size: 1rem;
+      border-radius: 6px 0 0 6px;
+      outline: none;
+    }
+
+    .input-container button {
+      background-color: #ffcb00;
+      border: none;
+      color: white;
+      padding: 0 1rem;
+      font-size: 1rem;
+      border-radius: 0 6px 6px 0;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.1s ease;
+    }
+
+    .input-container button:hover {
+      background-color: #e6b800;
+    }
+
+    .input-container button:active {
+      transform: scale(0.95);
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 600px) {
+      .header {
+        flex-direction: column;
+        padding: 1rem;
+      }
+
+      .logo {
+        margin-bottom: 0.75rem;
+        justify-content: center;
+        width: 100%;
+      }
+
+      .donate-btn {
+        width: 100%;
+        max-width: 300px;
+        font-size: 1.1rem;
+        padding: 0.75rem;
+      }
+
+      .main {
+        padding: 3rem 1rem 5rem;
+        clip-path: none;
+      }
+
+      .main h1 {
+        font-size: 2rem;
+        text-align: center;
+      }
+
+      .main p {
+        font-size: 1rem;
+        max-width: 100%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .input-container {
+        flex-direction: column;
+        max-width: 100%;
+        padding: 1rem 0;
+      }
+
+      .input-container input {
+        border-radius: 6px 6px 0 0;
+        padding: 0.75rem;
+        font-size: 1rem;
+      }
+
+      .input-container button {
+        border-radius: 0 0 6px 6px;
+        width: 100%;
+        padding: 0.75rem;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header" style="justify-content: space-between;">
+    <div class="logo">
+      <img src="https://d11sa1anfvm2xk.cloudfront.net/media/downloads/logos/cw_horizontal_black.jpg" alt="Charity: Water Supporter Logo" style="height: 50px;" />
+    </div>
+    <button class="donate-btn">Donate</button>
+  </div>
+
+  <div class="main">
+    <h1>Action, Not Just Activism</h1>
+    <p>
+      100% of your donation delivers clean water. We provide the proof, from GPS coordinates
+      to photos of the community you empowered.
+    </p>
+    <div class="input-container">
+      <input type="email" placeholder="email" />
+      <button onclick="alert('Thank you! We\'ll be in touch.')">Learn more</button>
+    </div>
+  </div>
+</body>
+</html>
